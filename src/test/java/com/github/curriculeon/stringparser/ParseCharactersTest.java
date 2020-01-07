@@ -28,7 +28,7 @@ public class ParseCharactersTest {
         test("   ", new Character[]{' ', ' ', ' '});
     }
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void test4() {
         test(null, null);
     }

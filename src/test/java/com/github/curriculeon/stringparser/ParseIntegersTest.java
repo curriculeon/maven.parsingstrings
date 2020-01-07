@@ -28,7 +28,7 @@ public class ParseIntegersTest {
         test("   ", new Integer[]{});
     }
 
-    @Test
+    @Test (expected = NullPointerException.class)
     public void test4() {
         test(null, null);
     }

@@ -28,7 +28,7 @@ public class ParseStringsTest {
         test("   ", new String[]{" ", " ", " "});
     }
 
-    @Test
+    @Test (expected = NullPointerException.class)
     public void test4() {
         test(null, null);
     }
